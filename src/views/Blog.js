@@ -10,22 +10,28 @@ import {
   Button
 } from "shards-react";
 import Skeleton from '@material-ui/lab/Skeleton';
+import { useParams, useHistory } from "react-router-dom"
 
 export default function Blog(props){
 
   const skeletons = [1, 2, 3, 4, 5, 6]
 
-  const [ selection, setSelection ] = useState('News')
-
   const [ articles, setArticles ] = useState([])
 
+  let { category } = useParams();
+  const history = useHistory()
+
   useEffect(() => {
-    if (props.blogs){
-      if (selection === "News") setArticles(props.blogs.news)
-      if (selection === "Educational") setArticles(props.blogs.educational)
-      if (selection === "Events") setArticles(props.blogs.events)
+    if (!category){
+      history.push(`/blog/news`)
     }
-  }, [selection, props.blogs])
+    if (props.blogs){
+      if (category === "news") setArticles(props.blogs.news)
+      if (category === "educational") setArticles(props.blogs.educational)
+      if (category === "events") setArticles(props.blogs.events)
+      if (category === "shorts") setArticles(props.blogs.shorts)
+    }
+  }, [category, props.blogs])
 
   return(
     <div>
@@ -34,17 +40,23 @@ export default function Blog(props){
           <div style={{height: "100%"}}>
             <div className="row" style={{height: "100%"}}>
               <div className="col col-12 my-auto">
-                <h1 className="text-gradient-color mb-4" style={{position: "relative", bottom: "100p", fontWeight: "800"}}>{selection}</h1>
+                {
+                  category &&
+                  <h1 className="text-gradient-color mb-4" style={{position: "relative", bottom: "100p", fontWeight: "800"}}>{`${category.split("")[0].toUpperCase()}${category.substring(1)}`}</h1>
+                }
                 <div>
                   <Nav className="justify-content-center text-center" activeKey="/home">
                     <Nav.Item>
-                      <Nav.Link onClick={() => setSelection('News')}>News</Nav.Link>
+                      <Nav.Link onClick={() => history.push(`/blog/news`)}>News</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link onClick={() => setSelection('Educational')}>Educational</Nav.Link>
+                      <Nav.Link onClick={() => history.push(`/blog/educational`)}>Educational</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link onClick={() => setSelection('Events')}>Events</Nav.Link>
+                      <Nav.Link onClick={() => history.push(`/blog/events`)}>Events</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link onClick={() => history.push(`/blog/shorts`)}>Shorts</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </div>
@@ -65,19 +77,28 @@ export default function Blog(props){
                 <div className="row">
                   {
                     articles.map((news, i) => {
-                      return (
-                        <div className="col col-12 col-lg-4 mb-5 text-left">
-                          <Card style={{height: "100%"}}>
-                            <CardImg top src={news.image} />
-                            <CardBody>
-                              <CardTitle>{news.title}</CardTitle>
-                              <p>{news.body}</p>
-                              <Button style={{display: news.link ? "" : "none"}} target="_blank" href={news.link}>{news.linkTitle}{` `}&rarr;</Button>
-                            </CardBody>
-                            <CardFooter>{news.date}</CardFooter>
-                          </Card>
-                        </div>
-                      )
+                      if (category != "shorts"){
+                        return (
+                          <div className="col col-12 col-lg-4 mb-5 text-left">
+                            <Card style={{height: "100%"}}>
+                              <CardImg top src={news.image} />
+                              <CardBody>
+                                <CardTitle>{news.title}</CardTitle>
+                                <p>{news.body}</p>
+                                <Button style={{display: news.link ? "" : "none"}} target="_blank" href={news.link}>{news.linkTitle}{` `}&rarr;</Button>
+                              </CardBody>
+                              <CardFooter>{news.date}</CardFooter>
+                            </Card>
+                          </div>
+                        )
+                      }else{
+                        return (
+                          <div className="col col-12 col-lg-6 mb-5 text-left">
+                            <iframe width="560" height="315" src={`https://www.youtube.com/embed/${news.image}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                          )
+                      }
+
                     })
                   }
                 </div>

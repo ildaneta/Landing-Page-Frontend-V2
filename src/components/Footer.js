@@ -33,7 +33,7 @@ export default function Footer(props){
                   </div>
                   <div className="col col-4">
                     <h6 className="white" style={{fontWeight: "500"}}>Resources</h6>
-                    <a target="_blank" href="mailto:team@alturanft.com">Contact</a>
+                    <a target="_blank" href="/contact">Contact</a>
                     <br/>
                     <a target="_blank" href="https://drive.google.com/file/d/1xjCoKdDAsmS2lvAcNglszxhu3l15lajb/view?usp=sharing">Whitepaper</a>
                     <br/>
@@ -54,10 +54,21 @@ export default function Footer(props){
                 </h6>
 
               </div>
-              <div className="col col-6 text-right">
-                <a className="mr-3" target="_blank" href="https://www.termsfeed.com/live/b08e259d-15c5-4b8b-a4af-4d3c7f441d58">Privacy Policy</a>
-                <a className="mr-3" target="_blank" href="https://www.termsfeed.com/live/6c7d2152-5a05-40da-8ec2-700302d97e6d">Terms of service</a>
-                <a className="mr-3" target="_blank" href="/terms-of-use">Terms of use</a>
+              <div className="col col-6">
+                <div className="row text-right text-lg-center">
+                  <div className="col col-12 col-lg-3 p-lg-0">
+                    <a className="m-auto" target="_blank" href="https://www.termsfeed.com/live/b08e259d-15c5-4b8b-a4af-4d3c7f441d58">Privacy Policy</a>
+                  </div>
+                  <div className="col col-12 col-lg-3 p-lg-0">
+                    <a className="m-auto" target="_blank" href="https://www.termsfeed.com/live/6c7d2152-5a05-40da-8ec2-700302d97e6d">Terms of service</a>
+                  </div>
+                  <div className="col col-12 col-lg-3 p-lg-0">
+                    <a className="m-auto" target="_blank" href="/terms-of-use">Terms of use</a>
+                  </div>
+                  <div className="col col-12 col-lg-3">
+                    <a className="m-auto" target="_blank" href="/jobs">Apply for a job</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

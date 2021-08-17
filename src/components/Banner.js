@@ -22,8 +22,6 @@ export default function Banner(props){
           <a href="https://www.reddit.com/r/AlturaNFT/" target="_blank"><FaRedditAlien /></a>
           <a href="https://www.tiktok.com/@altura_nft" target="_blank"><IoLogoTiktok /></a>
           <a href="https://github.com/Plutus-Gaming-NFTs-Reimagined" target="_blank"><FaGithub /></a>
-          <Button href="/jobs" pill outline className="ml-4" size="sm">Apply for a job</Button>
-
         </div>
       </div>
     </div>

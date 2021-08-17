@@ -49,8 +49,7 @@ export default function RequestCollectionVerifiation(props){
               </h5>
               <ul>
                 <li>It will show up on the <a target="_blank" href="https://app.alturanft.com/collections">verified collections page</a></li>
-                <li>It will show up in a dropdown menu in the <a target="_blank" href="https://app.alturanft.com/">marketplace</a></li>
-                <li>It will show up as a new collection at the top of the marketplace</li>
+                <li>It will show up in a dropdown menu in the <a target="_blank" href="https://app.alturanft.com/marketplace">marketplace</a></li>
                 <li>It will show up as a new collection at the top of the marketplace</li>
                 <li>It has a chance of being featured on the front page</li>
                 <li>A blue checkmark will show next to the collection</li>
@@ -60,7 +59,7 @@ export default function RequestCollectionVerifiation(props){
                 Who can be verified?
               </h5>
               <p>
-                To get your collection , you must be either a videogame,
+                To get your collection verified you must be either a videogame,
                 artist or content creator. You do not need to be a famous
                 triple-A video game to be verified. Indie, niche and small games
                 will be verified. Additionally, you do not need to be a famous or
@@ -87,7 +86,7 @@ export default function RequestCollectionVerifiation(props){
                   You do not have to have any NFTs minted beforehand. however,
                   we recommend minting some NFTs to the collection so that we
                   have a better idea of the content that will be included in the
-                  collection. To mint NFTs to your collection, click <a target="_blank" href="https://app.alturanft.com/new-collection">here</a>. Make
+                  collection. To mint NFTs to your collection, click <a target="_blank" href="https://app.alturanft.com/create">here</a>. Make
                   sure you select the collection you want to get verified when
                   minting.
                 </li>
@@ -110,7 +109,7 @@ export default function RequestCollectionVerifiation(props){
                     To get your collection URL, visit the <a target="_blank" href="https://app.alturanft.com/">Altura Marketplace</a>,
                     log in with metamask, click on your profile (top right),
                     click on "my collections," then click on your collection.
-                    Copy the URL from the search bar. The URL is of the form
+                    Copy the URL from the search bar.
                   </Form.Text>
                 </Form.Group>
 
