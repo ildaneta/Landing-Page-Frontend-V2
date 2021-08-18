@@ -88,8 +88,8 @@ export default function Team(props){
                 <CardTitle>Tarj Mecwan</CardTitle>
                 <p>Social Media Marketing Director</p>
                 <div style={{position: "absolute", bottom: "30px"}}>
-                  <a href="https://twitter.com/Majd_Hailat" target="_blank"><FaTwitter style={{paddingLeft: "0", marginLeft: "0"}}/></a>
-                  <a href="https://twitter.com/tarjmecwan" target="_blank"><FaGithub /></a>
+                  <a href="https://twitter.com/tarjmecwan" target="_blank"><FaTwitter style={{paddingLeft: "0", marginLeft: "0"}}/></a>
+                  <a href="https://github.com/TarjMecwan" target="_blank"><FaGithub /></a>
                 </div>
               </CardBody>
             </Card>

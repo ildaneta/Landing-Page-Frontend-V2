@@ -13,6 +13,7 @@ import Blog from './views/Blog'
 import Jobs from './views/Jobs'
 import NotFoundPage from './views/NotFoundPage'
 import TokenListing from './views/TokenListing'
+import LPStakingGiveaway from './views/LPStakingGiveaway'
 
 function App() {
   const [ holders, setHolders ] = useState('--')
@@ -63,6 +64,7 @@ function App() {
         <Route path="/blog/:category?" exact render={(props) => ( <Blog blogs={blogs} {...props} />)}/>
         <Route path="/jobs" exact render={(props) => ( <Jobs {...props} />)}/>
         <Route path="/token-listing" exact render={(props) => ( <TokenListing {...props} />)}/>
+        <Route path="/blog/article/lp-staking-giveaway" exact render={(props) => ( <LPStakingGiveaway {...props} />)}/>
         <Route path="/" exact render={(props) => ( <Home {...props} news={blogs.featuredNews} holders={holders} marketCap={marketCap} />)}/>
         <Route render={(props) => ( <NotFoundPage {...props} />)}/>
         </Switch>
