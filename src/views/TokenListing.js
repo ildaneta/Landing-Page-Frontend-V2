@@ -43,7 +43,7 @@ export default function Contact(props){
       <div className="contact-us-div gradient-bg" >
         <div className="container" style={{height: "100%"}}>
           <div className="row" style={{height: "100%"}}>
-            <div className="col col-6 my-auto text-left">
+            <div className="col col-md-6 col-12 my-auto text-left">
               <h1 className="white title mb-0" style={{position: "relative", bottom: "100p", fontWeight: "800"}}>List Your Token on Altura Now!</h1>
               <h6 style={{fontWeight: "500"}} className="white header-subtitle my-4">
                 Provide an immediate use case for your token and an enjoyable NFT experinace for your community now!
@@ -52,8 +52,8 @@ export default function Contact(props){
                 Visit Marketplace
               </Button>
             </div>
-            <div className="col col-6 my-auto text-center">
-              <img style={{maxWidth: "100%", maxHeight: "100%", borderRadius: "16px"}}src="/images/graphics/marketplace2.png"></img>
+            <div className="col col-md-6 col-12 my-auto text-center">
+              <img style={{maxWidth: "100%", maxHeight: "100%", borderRadius: "16px"}}src="/images/graphics/marketplace2.png" />
             </div>
           </div>
         </div>
