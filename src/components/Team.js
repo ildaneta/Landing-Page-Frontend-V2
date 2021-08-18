@@ -81,7 +81,7 @@ export default function Team(props){
             </Card>
           </div>
 
-          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-0">
+          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-xl-5 mb-5">
             <Card style={{ maxWidth: "300px" }}>
               <CardImg alt="Tarj Mecwan" top src="/images/team/color/tarj.png" />
               <CardBody style={{height: "180px"}}>
@@ -95,7 +95,7 @@ export default function Team(props){
             </Card>
           </div>
 
-          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-0">
+          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-xl-5 mb-5">
             <Card style={{ maxWidth: "300px" }}>
               <CardImg alt="Mark Nicholson" top src="/images/team/color/mark.png" />
               <CardBody style={{height: "180px"}}>
@@ -108,7 +108,7 @@ export default function Team(props){
             </Card>
           </div>
 
-          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-0">
+          <div className="d-flex justify-content-center col col-12 col-md-6 col-xl-3 text-left mb-xl-5 mb-5">
             <Card style={{ maxWidth: "300px" }}>
               <CardImg alt="Bashar Mograbi" top src="/images/team/color/bashar.png" />
               <CardBody style={{height: "180px"}}>

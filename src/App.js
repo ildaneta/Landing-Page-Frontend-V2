@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {BrowserRouter as Router, Route, useLocation} from "react-router-dom";
+import {BrowserRouter as Router, Route, useLocation, Switch} from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
@@ -11,6 +11,8 @@ import RequestCollectionVerifiation from './views/RequestCollectionVerification'
 import Contact from './views/Contact';
 import Blog from './views/Blog'
 import Jobs from './views/Jobs'
+import NotFoundPage from './views/NotFoundPage'
+import TokenListing from './views/TokenListing'
 
 function App() {
   const [ holders, setHolders ] = useState('--')
@@ -54,12 +56,16 @@ function App() {
       <Router>
         <Banner  />
         <Navbar />
+        <Switch>
         <Route path="/terms-of-use" exact render={(props) => ( <TermsOfUse {...props} />)}/>
         <Route path="/blog/article/request-collection-verification" exact render={(props) => ( <RequestCollectionVerifiation {...props} />)}/>
         <Route path="/contact/:defaultSubject?" exact render={(props) => ( <Contact {...props} />)}/>
         <Route path="/blog/:category?" exact render={(props) => ( <Blog blogs={blogs} {...props} />)}/>
         <Route path="/jobs" exact render={(props) => ( <Jobs {...props} />)}/>
+        <Route path="/token-listing" exact render={(props) => ( <TokenListing {...props} />)}/>
         <Route path="/" exact render={(props) => ( <Home {...props} news={blogs.featuredNews} holders={holders} marketCap={marketCap} />)}/>
+        <Route render={(props) => ( <NotFoundPage {...props} />)}/>
+        </Switch>
         <Footer />
       </Router>
     </div>
