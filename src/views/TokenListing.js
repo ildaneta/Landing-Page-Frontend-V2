@@ -170,7 +170,7 @@ export default function Contact(props){
               </h6>
             </div>
             <div className="col col-12 col-md-6 p-5">
-              <img alt="floating gaming sword" src="images/graphics/token-pitch/tokenDrop.png" style={{width: "100%", height: "100%", borderRadius: "16px"}}/>
+              <img alt="floating gaming sword" src="images/graphics/token-pitch/tokendrop.png" style={{width: "100%", height: "100%", borderRadius: "16px"}}/>
             </div>
           </div>
         </div>
