@@ -25,6 +25,7 @@ export default function LPStakingGiveaway(props){
               <ul>
                 <li>20 people will recieve $500 each in ALU for staking ALU-BNB LP</li>
                 <li>The larger your share of the stake pool, the greater your chance of winning</li>
+                <li>You are disqualified from winning if you sold any ALU 7 days prior to the 25th</li>
                 <li>The winners will be selected, announced and airdropped on August 25, 2021</li>
                 <li><a href="https://staking.alturanft.com/" target="_blank">Stake here</a></li>
               </ul>
