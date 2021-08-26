@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, useLocation, Switch} from "react-router-
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Countdown from './components/Countdown';
 import Footer from './components/Footer';
 import axios from 'axios';
 import TermsOfUse from './views/TermsOfUse';
@@ -56,6 +57,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Countdown />
         <Banner  />
         <Navbar />
         <Switch>

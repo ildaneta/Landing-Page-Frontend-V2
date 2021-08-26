@@ -27,7 +27,7 @@ export default function LPStakingGiveaway(props){
               </h5>
               <ol>
                 <li>You must mint an original NFT, create by you, on the <a href="https://app.alturanft.com/" target="_blank">Altura NFT marketplace</a></li>
-                <li>You must put the hashtag <strong><i>#polyplay</i></strong> in the description of the NFT. The hashtag may be put anywhere in the description.</li>
+                <li>You must put the hashtag <strong><i>#polyplay</i></strong> in the description of the NFT. The hashtag may be put anywhere in the description. Make sure there is no punctuation directly after the hashtag like periods or exclamation points.</li>
                 <li>You must list your NFT in the <strong>$PLAY</strong> token on the Altura marketplace. If your NFT gets sold, it is still entered in the compeition. As long as it
                   <strong> was</strong> listed in $PLAY once, it is eligible.</li>
               </ol>
@@ -39,7 +39,7 @@ export default function LPStakingGiveaway(props){
               <ul>
                 <li>Your NFT must be an original piece created by you. If it was taken from the internet or plagarised it will be disqualified.</li>
                 <li>Your NFT must have <i>#polyplay</i> in the description and must have been listed in $PLAY at least once</li>
-                <li>The vote will begin on the 27th of August and will last until the 30th.</li>
+                <li><strong>The vote will begin on the 30th of August and will last until the 2nd</strong></li>
                 <li>All elgible NFTs will be displaye for users to vote.</li>
                 <li>The first place prize is $300, second place is $200 and third place is $100.</li>
               </ul>

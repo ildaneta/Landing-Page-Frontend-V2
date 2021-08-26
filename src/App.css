@@ -130,6 +130,12 @@ h1{
   background-color: #F9F8F6;
 }
 
+.countdown{
+  border-bottom: 1px solid #E2E2E2;
+  background-color: rgb(135,107,255);
+  text-align: center;
+}
+
 .nav-link{
   font-weight: 600;
 }
