@@ -39,7 +39,7 @@ export default function LPStakingGiveaway(props){
               <ul>
                 <li>Your NFT must be an original piece created by you. If it was taken from the internet or plagarised it will be disqualified.</li>
                 <li>Your NFT must have <i>#polyplay</i> in the description and must have been listed in $PLAY at least once</li>
-                <li><strong>The vote will begin on the 5th of August and will last until the 7th</strong></li>
+                <li><strong>The vote will begin on the 5th of September and will last until the 7th</strong></li>
                 <li>All elgible NFTs will be displaye for users to vote.</li>
                 <li>The first place prize is $300, second place is $200 and third place is $100.</li>
               </ul>
