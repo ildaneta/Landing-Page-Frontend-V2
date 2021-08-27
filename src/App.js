@@ -61,16 +61,16 @@ function App() {
         <Banner  />
         <Navbar />
         <Switch>
-        <Route path="/terms-of-use" exact render={(props) => ( <TermsOfUse {...props} />)}/>
-        <Route path="/blog/article/request-collection-verification" exact render={(props) => ( <RequestCollectionVerifiation {...props} />)}/>
-        <Route path="/contact/:defaultSubject?" exact render={(props) => ( <Contact {...props} />)}/>
-        <Route path="/blog/:category?" exact render={(props) => ( <Blog blogs={blogs} {...props} />)}/>
-        <Route path="/jobs" exact render={(props) => ( <Jobs {...props} />)}/>
-        <Route path="/token-listing" exact render={(props) => ( <TokenListing {...props} />)}/>
-        <Route path="/blog/article/lp-staking-giveaway" exact render={(props) => ( <LPStakingGiveaway {...props} />)}/>
-        <Route path="/blog/article/polyplay-nft-compeition" exact render={(props) => ( <PolyPlayNFTCompeition {...props} />)}/>
-        <Route path="/" exact render={(props) => ( <Home {...props} news={blogs.featuredNews} holders={holders} marketCap={marketCap} />)}/>
-        <Route render={(props) => ( <NotFoundPage {...props} />)}/>
+          <Route path="/terms-of-use" exact render={(props) => ( <TermsOfUse {...props} />)}/>
+          <Route path="/blog/article/request-collection-verification" exact render={(props) => ( <RequestCollectionVerifiation {...props} />)}/>
+          <Route path="/contact/:defaultSubject?" exact render={(props) => ( <Contact {...props} />)}/>
+          <Route path="/blog/:category?" exact render={(props) => ( <Blog blogs={blogs} {...props} />)}/>
+          <Route path="/jobs" exact render={(props) => ( <Jobs {...props} />)}/>
+          <Route path="/token-listing" exact render={(props) => ( <TokenListing {...props} />)}/>
+          <Route path="/blog/article/lp-staking-giveaway" exact render={(props) => ( <LPStakingGiveaway {...props} />)}/>
+          <Route path="/blog/article/polyplay-nft-compeition" exact render={(props) => ( <PolyPlayNFTCompeition {...props} />)}/>
+          <Route path="/" exact render={(props) => ( <Home {...props} news={blogs.featuredNews} holders={holders} marketCap={marketCap} />)}/>
+          <Route render={(props) => ( <NotFoundPage {...props} />)}/>
         </Switch>
         <Footer />
       </Router>
